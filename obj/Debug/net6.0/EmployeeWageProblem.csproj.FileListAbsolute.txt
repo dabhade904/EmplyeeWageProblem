@@ -1,0 +1,15 @@
+C:\Users\sir\Desktop\dotNet\EmployeeWageProblem\bin\Debug\net6.0\EmployeeWageProblem.exe
+C:\Users\sir\Desktop\dotNet\EmployeeWageProblem\bin\Debug\net6.0\EmployeeWageProblem.deps.json
+C:\Users\sir\Desktop\dotNet\EmployeeWageProblem\bin\Debug\net6.0\EmployeeWageProblem.runtimeconfig.json
+C:\Users\sir\Desktop\dotNet\EmployeeWageProblem\bin\Debug\net6.0\EmployeeWageProblem.dll
+C:\Users\sir\Desktop\dotNet\EmployeeWageProblem\bin\Debug\net6.0\EmployeeWageProblem.pdb
+C:\Users\sir\Desktop\dotNet\EmployeeWageProblem\obj\Debug\net6.0\EmployeeWageProblem.csproj.AssemblyReference.cache
+C:\Users\sir\Desktop\dotNet\EmployeeWageProblem\obj\Debug\net6.0\EmployeeWageProblem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sir\Desktop\dotNet\EmployeeWageProblem\obj\Debug\net6.0\EmployeeWageProblem.AssemblyInfoInputs.cache
+C:\Users\sir\Desktop\dotNet\EmployeeWageProblem\obj\Debug\net6.0\EmployeeWageProblem.AssemblyInfo.cs
+C:\Users\sir\Desktop\dotNet\EmployeeWageProblem\obj\Debug\net6.0\EmployeeWageProblem.csproj.CoreCompileInputs.cache
+C:\Users\sir\Desktop\dotNet\EmployeeWageProblem\obj\Debug\net6.0\EmployeeWageProblem.dll
+C:\Users\sir\Desktop\dotNet\EmployeeWageProblem\obj\Debug\net6.0\refint\EmployeeWageProblem.dll
+C:\Users\sir\Desktop\dotNet\EmployeeWageProblem\obj\Debug\net6.0\EmployeeWageProblem.pdb
+C:\Users\sir\Desktop\dotNet\EmployeeWageProblem\obj\Debug\net6.0\EmployeeWageProblem.genruntimeconfig.cache
+C:\Users\sir\Desktop\dotNet\EmployeeWageProblem\obj\Debug\net6.0\ref\EmployeeWageProblem.dll
