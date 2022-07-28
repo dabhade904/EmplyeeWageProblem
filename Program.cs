@@ -2,9 +2,11 @@
 {
     public class Program
     {
-        public static void Main(String[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to employee wage problem");
+            //EmplyeeWage obj =new EmplyeeWage();
+            EmplyeeWage.calculateEmployeeWage();
         }
     }
 }
