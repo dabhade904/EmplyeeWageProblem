@@ -17,24 +17,27 @@ namespace EmployeeWageProblem
         public  void calculateEmployeeWage()
         {
             //Constant
-            int WAGE_PER_HRS = 20, FLL_DAY_HRS = 8,PART_TIME_WAGE=4;
+            int WAGE_PER_HRS = 20;
             Random obj = new Random();
             //variable
             int empCheck=obj.Next(3);
+            int workingHours = 0;
             switch (empCheck)
               {
                   case 0:
-                      int fullDayWage = WAGE_PER_HRS * FLL_DAY_HRS;
-                      Console.WriteLine("full day wage is :" + fullDayWage);
+                        workingHours = 8;
+                        Console.WriteLine("full day wage is :"+workingHours );
                       break;
                   case 1:
-                      int partTimeWage = WAGE_PER_HRS * PART_TIME_WAGE;
-                      Console.WriteLine("part time wage is : " + partTimeWage);
+                        workingHours = 4;
+                        Console.WriteLine("part time wage is : "+workingHours);
                       break ;
                   default:
-                      Console.WriteLine("employee is absent");
+                        Console.WriteLine("employee is absent");
                       break;
-              } 
+              }
+            int wage = workingHours * WAGE_PER_HRS;
+            Console.WriteLine("employee wages are "+wage);
         }
     }
 }
