@@ -18,13 +18,15 @@ namespace EmployeeWageProblem
         {
             //Constant
             int IS_EMP_PRESENT = 1;
+            int WAGE_PER_HRS = 20, FLL_DAY_HRS = 8;
             Random obj = new Random();
-            
             //variable
             int empCheck=obj.Next(2);
             if (empCheck == IS_EMP_PRESENT)
             {
                 Console.WriteLine("employee is present");
+                int wage = WAGE_PER_HRS * FLL_DAY_HRS;
+                Console.WriteLine(wage);
             }
             else
             {
