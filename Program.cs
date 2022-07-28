@@ -5,8 +5,8 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to employee wage problem");
-            //EmplyeeWage obj =new EmplyeeWage();
-            EmplyeeWage.calculateEmployeeWage();
+            EmplyeeWage obj =new EmplyeeWage();
+            obj.calculateEmployeeWage();
         }
     }
 }
