@@ -6,42 +6,47 @@ using System.Threading.Tasks;
 
 namespace EmployeeWageProblem
 {
-    /// <summary>
-    /// 
-    /// </summary>
     public class EmplyeeWage
     {
         /// <summary>
         ///  calculating the Employee Wages
         /// </summary>
+        /// 
+        //Constant
+        public const int IS_FLL_TIME = 0;
+        public const int IS_PART_TIME = 1;
+        public const int WAGE_PER_HRS = 20;
+        public const int WORKING_DAY_PER_MONTH = 20;
+        public const int TOTAL_WORKING_HRS = 100;
         public  void calculateEmployeeWage()
         {
-            //Constant
-            int WAGE_PER_HRS = 20,WORKING_DAY_PER_MONTH=20;
-            int totalWage = 0;
-            for (int i = 1; i < WORKING_DAY_PER_MONTH; i++)
+            //variable
+            int totalWorkingHrs = 0;
+            int totalWorkingDay=0;
+            int workingHours = 0;
+            while (totalWorkingHrs != TOTAL_WORKING_HRS && totalWorkingDay != WORKING_DAY_PER_MONTH)
             {
+                totalWorkingDay++;
                 Random obj = new Random();
-                //variable
                 int empCheck = obj.Next(3);
-                int workingHours = 0;
                 switch (empCheck)
                 {
-                    case 0:
+                    case IS_FLL_TIME:
                         workingHours = 8;
                          break;
-                    case 1:
+                    case IS_PART_TIME:
                         workingHours = 4;
                         break;
                     default:
-                        Console.WriteLine("employee is absent");
+                        workingHours = 0;
                         break;
                 }
-                int wage = workingHours * WAGE_PER_HRS;
-                Console.WriteLine("day " +i+" wage is " + wage);
-                totalWage += wage;
+                totalWorkingHrs += workingHours;  
+                Console.WriteLine("day "+totalWorkingDay+" wage is " + workingHours);
             }
-            Console.WriteLine("total wage for a month is " + totalWage);
+            int wage = totalWorkingHrs * WAGE_PER_HRS;
+            Console.WriteLine("total wage for a month is " + wage);
         }
     }
 }
+
