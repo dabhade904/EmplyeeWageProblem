@@ -13,7 +13,7 @@ namespace EmployeeWageProblem
         /// </summary>
         /// 
         //Constant
-        public const int IS_FLL_TIME = 0;
+        public const int IS_FULL_TIME = 0;
         public const int IS_PART_TIME = 1;
         public const int WAGE_PER_HRS = 20;
         public const int WORKING_DAY_PER_MONTH = 20;
@@ -23,7 +23,7 @@ namespace EmployeeWageProblem
             //variable
             int totalWorkingHrs = 0;
             int totalWorkingDay=0;
-            int workingHours = 0;
+            int workingHours ;
             while (totalWorkingHrs != TOTAL_WORKING_HRS && totalWorkingDay != WORKING_DAY_PER_MONTH)
             {
                 totalWorkingDay++;
@@ -31,7 +31,7 @@ namespace EmployeeWageProblem
                 int empCheck = obj.Next(3);
                 switch (empCheck)
                 {
-                    case IS_FLL_TIME:
+                    case IS_FULL_TIME:
                         workingHours = 8;
                          break;
                     case IS_PART_TIME:
