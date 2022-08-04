@@ -15,16 +15,14 @@ namespace EmployeeWageProblem
         //Constant
         public const int IS_FULL_TIME = 0;
         public const int IS_PART_TIME = 1;
-        public const int WAGE_PER_HRS = 20;
         public const int WORKING_DAY_PER_MONTH = 20;
-        public const int TOTAL_WORKING_HRS = 100;
-        public  void calculateEmployeeWage()
+        public  void calculateEmployeeWage(string company,int ratePerHrs , int numberOfWorkingDay, int TOTAL_WORKING_HRS)
         {
             //variable
-            int totalWorkingHrs = 0;
-            int totalWorkingDay=0;
+            int totalEmpHrs = 0;
+            int totalWorkingDay = 0;
             int workingHours ;
-            while (totalWorkingHrs != TOTAL_WORKING_HRS && totalWorkingDay != WORKING_DAY_PER_MONTH)
+            while (totalEmpHrs != TOTAL_WORKING_HRS && totalWorkingDay != numberOfWorkingDay)
             {
                 totalWorkingDay++;
                 Random obj = new Random();
@@ -41,11 +39,11 @@ namespace EmployeeWageProblem
                         workingHours = 0;
                         break;
                 }
-                totalWorkingHrs += workingHours;  
+                totalEmpHrs += workingHours;  
                 Console.WriteLine("day "+totalWorkingDay+" wage is " + workingHours);
             }
-            int wage = totalWorkingHrs * WAGE_PER_HRS;
-            Console.WriteLine("total wage for a month is " + wage);
+            int wage = totalEmpHrs * ratePerHrs;
+            Console.WriteLine("total wage for company "+company+" is " + wage);
         }
     }
 }

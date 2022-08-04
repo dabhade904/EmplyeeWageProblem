@@ -6,7 +6,8 @@
         {
             Console.WriteLine("Welcome to employee wage problem");
             EmplyeeWage obj =new EmplyeeWage();
-            obj.calculateEmployeeWage();
+            obj.calculateEmployeeWage("Bridelabz solutions", 20,10,100);
+            obj.calculateEmployeeWage("Dmart",20,20,100);
         }
     }
 }
