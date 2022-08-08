@@ -5,9 +5,12 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to employee wage problem");
-            EmplyeeWage obj =new EmplyeeWage();
-            obj.calculateEmployeeWage("Bridelabz solutions", 20,10,100);
-            obj.calculateEmployeeWage("Dmart",20,20,100);
+            EmplyeeWage dMart =new EmplyeeWage("Dmart",20,2,10);
+            EmplyeeWage bridgelabz = new EmplyeeWage("Dmart", 20, 2, 10);
+            dMart.calculateEmployeeWage();
+            bridgelabz.calculateEmployeeWage();
+            Console.WriteLine(dMart.toString());
+            Console.WriteLine(bridgelabz.toString());
         }
     }
 }
